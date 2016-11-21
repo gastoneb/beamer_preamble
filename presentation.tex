@@ -1,0 +1,51 @@
+\documentclass[xcolor=table]{beamer}
+\usepackage{amsmath ,amsthm ,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[latin1]{inputenc}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{bm}
+\beamertemplatenavigationsymbolsempty
+\newcommand\Fontvi{\fontsize{10}{7.2}\selectfont}
+\title{My Title}
+\author{My Name}
+\institute{My Institiution}
+\date{Presentation Date}
+\let\otp\titlepage
+\renewcommand{\titlepage}{\otp\addtocounter{framenumber}{-1}}
+\definecolor{darkgray}{rgb}{0.4, 0.4, 0.4}
+\setbeamercolor{myfoot}{fg=darkgray, bg=white}
+\makeatletter
+\setbeamertemplate{footline}
+{
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{myfoot}%
+            \insertshortauthor
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{myfoot}%
+            \insertshortinstitute
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{myfoot}%
+            \insertshortdate{}\hspace*{2em}
+            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+        \end{beamercolorbox}}%
+        \vskip0pt%
+    }
+    \makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Title page
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+% Empty slide
+\begin{frame}{Introduction}
+\end{frame}
+
+\end{document}
